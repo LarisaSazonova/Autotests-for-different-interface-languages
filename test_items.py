@@ -12,5 +12,5 @@ def test_add_to_basket_button_available(browser):
 
     elements = browser.find_elements(By.CSS_SELECTOR, "#add_to_basket_form > button")
 
-    assert elements is not None
+    assert elements is not None, "Didn't find 'Add to basket' button"
 
